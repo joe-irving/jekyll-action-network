@@ -1,0 +1,101 @@
+filters:
+  all:
+    "action_network:hidden": false
+    browser_url: "%"
+  events:
+    visibility: public
+fields:
+  - title
+  - description
+  - petition_text
+  - browser_url
+  - image
+  - target
+  - actions
+  - "action_network:sponsor"
+  - start_date
+  - end_date
+  - location
+  - visibility
+  - capacity
+  - host_url
+  - total_events
+  - total_rsvps
+  - call_to_action
+  - "action_network:event_campaign_id"
+embed:
+  resources:
+    forms: form
+    events: event
+    petitions: petition
+    letters: letter
+    call_campaigns: call_campaign
+    event_campaigns: event_campaign
+  styles:
+    standard: <link href='https://actionnetwork.org/css/style-embed-v3.css' rel='stylesheet' type='text/css' />
+    layout_only: <link href='https://actionnetwork.org/css/style-embed-whitelabel-v3.css' rel='stylesheet' type='text/css' />
+defaults:
+  petitions:
+    collection: petitions
+    layout: an-petition 
+    content: description
+    mappings:
+      title: title
+      description: description
+      petition_text: petition_text
+      browser_url: browser_url
+      featured_image_url: image
+      target: target
+      "action_network:sponsor": sponsor
+  # campaigns:
+  #   collection: campaigns
+  #   layout: an-campaign
+  #   content: description
+  #   mappings:
+  #     title: title
+  #     description: description
+  #     browser_url: browser_url
+  #     featured_image_url: image
+  #     actions: actions
+  #     "action_network:sponsor": sponsor
+  events:
+    collection: events
+    layout: an-event
+    content: description
+    mappings:
+      title: title
+      description: description
+      browser_url: browser_url
+      featured_image_url: image
+      start_date: start_date
+      end_date: end_date
+      location: location
+      "action_network:event_campaign_id": event_campaign_id
+      status: status
+      visibility: visibility
+      capacity: capacity
+      "action_network:sponsor": sponsor
+  event_campaigns:
+    collection: event_campaigns
+    layout: an-event_campaign
+    content: description
+    mappings:
+      title: title
+      description: description
+      browser_url: browser_url
+      featured_image_url: image
+      host_url: host_url
+      total_events: total_events
+      total_rsvps: total_rsvps
+      "action_network:sponsor": sponsor
+  # forms:
+  #   collection: forms
+  #   layout: an-form
+  #   content: description
+  #   mappings:
+  #     title: title
+  #     description: description
+  #     call_to_action: call_to_action
+  #     browser_url: browser_url
+  #     featured_image_url: image
+  #     "action_network:sponsor": sponsor

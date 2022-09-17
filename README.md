@@ -4,7 +4,7 @@ A Jekyll::Generator that brings your action network events, petitions etc into a
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your site's Gemfile:
 
 ```ruby
 gem 'jekyll-action-network'

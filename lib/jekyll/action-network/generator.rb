@@ -22,11 +22,13 @@ module Jekyll
       @config = site.config["action_network"]
       return unless authenticate
 
+      @actions = Jekyll::Collection.new(site, "actions") if @config["actions"]
       @config.each do |name, _config|
         next unless @defaults[name]
 
         make_collection(name)
       end
+      site.collections["actions"] = @actions if @actions
     end
 
     def settings
@@ -40,13 +42,13 @@ module Jekyll
     def make_collection(name)
       if @config[name].is_a?(Hash)
         config = @defaults[name].merge(@config[name])
-        config["mappings"] = @defaults[name]["mappings"].merge(@config[name]["mappings"])
+        config["mappings"] = @defaults[name]["mappings"].merge(@config[name]["mappings"] || {})
       end
       config ||= @defaults[name]
       Jekyll.logger.info @log_name, "Processing #{name}"
       actions = get_full_list(name)
       Jekyll.logger.warn "#{name} before filter: #{actions.length}"
-      filtered_actions = filter_actions(name, actions)
+      filtered_actions = filter_actions(name, actions, config)
       Jekyll.logger.warn "#{name} after filter: #{filtered_actions.length}"
       collection = @site.collections[name] if @site.collections[name]
       collection ||= Jekyll::Collection.new(@site, config["collection"])
@@ -62,10 +64,12 @@ module Jekyll
         frontmattter_data.merge!({
                                    "layout" => config["layout"],
                                    "slug" => slug,
-                                   "embed_code" => make_embed_code(action["browser_url"])
+                                   "embed_code" => make_embed_code(action["browser_url"]),
+                                   "action_type" => name
                                  })
         doc.merge_data!(frontmattter_data)
         collection.docs << doc
+        @actions.docs << doc if @actions
       end
       @site.collections[config["collection"]] = collection
     end
@@ -93,19 +97,19 @@ module Jekyll
       actions
     end
 
-    def filter_actions(name, actions)
+    def filter_actions(name, actions, _config)
       public = []
+      puts @filters["all"]
+      puts @filters[name] || {}
+      filters = @filters["all"].merge(@filters[name] || {})
+      filters = filters.merge(@config["filters"] || {}) if @config.is_a? Hash
+      puts filters
       actions.each do |action|
         filtered = true
-        filters = if @filters[name]
-                    @filters["all"].merge @filters[name]
-                  else
-                    @filters["all"]
-                  end
         filters.each do |key, value|
           unless action[key] == value
-            if value == "%" && action[key].length.positive?
-              filtered = false
+            if value == "%" && action[key]
+              filtered = false if action[key].length.positive?
             else
               Jekyll.logger.warn @log_name, "#{name} filtered because #{action[key]} == #{value}"
               filtered = true

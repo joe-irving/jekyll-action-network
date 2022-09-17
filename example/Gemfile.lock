@@ -1,16 +1,20 @@
+GIT
+  remote: https://github.com/joe-irving/action-network-rest
+  revision: cc7534029ec05378c8f307ad40d403b996114de7
+  specs:
+    action_network_rest (0.10.0)
+      vertebrae (~> 0.6.0)
+
 PATH
   remote: ..
   specs:
-    jekyll-action-network (0.0.1)
-      action_network_rest (= 0.10.0)
+    jekyll-action-network (0.2.0)
       dotenv (>= 2.8.0)
       jekyll (>= 4.2.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    action_network_rest (0.10.0)
-      vertebrae (~> 0.6.0)
     activesupport (7.0.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
@@ -123,6 +127,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  action_network_rest!
   jekyll (~> 4.2.0)
   jekyll-action-network!
   jekyll-feed (~> 0.12)

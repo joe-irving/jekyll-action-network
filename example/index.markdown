@@ -16,3 +16,11 @@ layout: home
 # Event Campaigns
 
 {% include post_list.html data=site.event_campaigns date='start_date' %}
+
+# Campaigns
+
+{% include post_list.html data=site.campaigns date='start_date' %}
+
+# Forms
+
+{% include post_list.html data=site.forms %}

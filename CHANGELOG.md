@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.2.0...v0.3.0) (2022-09-17)
+
+
+### Features
+
+* add forms, advocacy campaigns, and all actions collection ([493b076](https://www.github.com/joe-irving/jekyll-action-network/commit/493b076e784f159a119a4a8424c54c4859a574dd))
+
 ## [0.2.0](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.1.0...v0.2.0) (2022-09-17)
 
 

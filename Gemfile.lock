@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-action-network (0.0.1)
+    jekyll-action-network (0.1.0)
       action_network_rest (= 0.10.0)
       dotenv (>= 2.8.0)
       jekyll (>= 4.2.0)

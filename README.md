@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-In you `_config.yml` file in the root directory of your jekyll site, add `gem "jekyll-action-network"` under plugins:
+In you `_config.yml` file in the root directory of your jekyll site, add `gem "jekyll-action-network"` under plugins: 
 
 ```yaml
 plugins:

@@ -90,8 +90,8 @@ defaults:
       total_rsvps: total_rsvps
       "action_network:sponsor": sponsor
   advocacy_campaigns:
-    collection: advovacy_campaigns
-    layout: an-advovacy_campaigns
+    collection: advocacy_campaigns
+    layout: an-advocacy_campaign
     content: description
     mappings:
       title: title

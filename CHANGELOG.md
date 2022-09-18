@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.3.3](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.3.2...v0.3.3) (2022-09-18)
+
+
+### Bug Fixes
+
+* rename module back to not snake_case ([d8ad13b](https://www.github.com/joe-irving/jekyll-action-network/commit/d8ad13b21187a042aa32929d6744dda428dea6aa))
+
 ### [0.3.2](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.3.1...v0.3.2) (2022-09-18)
 
 

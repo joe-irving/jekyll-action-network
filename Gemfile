@@ -6,9 +6,3 @@ source "https://rubygems.org"
 gemspec
 
 # gem "action-network-rest", git: "https://github.com/joe-irving/action-network-rest"
-
-gem "rake"
-
-gem "rspec"
-
-gem "rubocop"

@@ -48,17 +48,17 @@ defaults:
       featured_image_url: image
       target: target
       "action_network:sponsor": sponsor
-  campaigns:
-    collection: campaigns
-    layout: an-campaign
-    content: description
-    mappings:
-      title: title
-      description: description
-      browser_url: browser_url
-      featured_image_url: image
-      actions: actions
-      "action_network:sponsor": sponsor
+  # campaigns:
+  #   collection: campaigns
+  #   layout: an-campaign
+  #   content: description
+  #   mappings:
+  #     title: title
+  #     description: description
+  #     browser_url: browser_url
+  #     featured_image_url: image
+  #     actions: actions
+  #     "action_network:sponsor": sponsor
   events:
     collection: events
     layout: an-event
@@ -89,27 +89,27 @@ defaults:
       total_events: total_events
       total_rsvps: total_rsvps
       "action_network:sponsor": sponsor
-  advocacy_campaigns:
-    collection: advocacy_campaigns
-    layout: an-advocacy_campaign
-    content: description
-    mappings:
-      title: title
-      description: description
-      type: type
-      browser_url: browser_url
-      featured_image_url: image
-      "action_network:sponsor": sponsor
-      targets: targets
-      total_outreaches: total_outreaches
-  forms:
-    collection: forms
-    layout: an-form
-    content: description
-    mappings:
-      title: title
-      description: description
-      call_to_action: call_to_action
-      browser_url: browser_url
-      featured_image_url: image
-      "action_network:sponsor": sponsor
+  # advocacy_campaigns:
+  #   collection: advocacy_campaigns
+  #   layout: an-advocacy_campaign
+  #   content: description
+  #   mappings:
+  #     title: title
+  #     description: description
+  #     type: type
+  #     browser_url: browser_url
+  #     featured_image_url: image
+  #     "action_network:sponsor": sponsor
+  #     targets: targets
+  #     total_outreaches: total_outreaches
+  # forms:
+  #   collection: forms
+  #   layout: an-form
+  #   content: description
+  #   mappings:
+  #     title: title
+  #     description: description
+  #     call_to_action: call_to_action
+  #     browser_url: browser_url
+  #     featured_image_url: image
+  #     "action_network:sponsor": sponsor

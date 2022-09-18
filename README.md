@@ -36,8 +36,6 @@ action_network:
     # And your collections from action network you want to import
     events: true
     petitions: true
-    forms: true
-    campaigns: true
 ```
 
 Here is the full default configuration:
@@ -57,17 +55,6 @@ action_network:
       browser_url: browser_url
       featured_image_url: image
       target: target
-      "action_network:sponsor": sponsor
-  campaigns:
-    collection: campaigns
-    layout: an-campaign
-    content: description
-    mappings:
-      title: title
-      description: description
-      browser_url: browser_url
-      featured_image_url: image
-      actions: actions
       "action_network:sponsor": sponsor
   events:
     collection: events
@@ -98,30 +85,6 @@ action_network:
       host_url: host_url
       total_events: total_events
       total_rsvps: total_rsvps
-      "action_network:sponsor": sponsor
-  advocacy_campaigns:
-    collection: advovacy_campaigns
-    layout: an-advovacy_campaigns
-    content: description
-    mappings:
-      title: title
-      description: description
-      type: type
-      browser_url: browser_url
-      featured_image_url: image
-      "action_network:sponsor": sponsor
-      targets: targets
-      total_outreaches: total_outreaches
-  forms:
-    collection: forms
-    layout: an-form
-    content: description
-    mappings:
-      title: title
-      description: description
-      call_to_action: call_to_action
-      browser_url: browser_url
-      featured_image_url: image
       "action_network:sponsor": sponsor
 ```
 
@@ -162,4 +125,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Jekyll::Gdocfilter project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/jekyll-gdocfilter/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Jekyll::ActionNetworkGenerator project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/jekyll-gdocfilter/blob/master/CODE_OF_CONDUCT.md).

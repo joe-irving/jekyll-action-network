@@ -25,11 +25,15 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  # spec.add_dependency "action_network_rest", "0.10.0"
+  spec.required_ruby_version = ">= 2.5"
+
+  spec.add_runtime_dependency "action_network_rest", "~> 0.10.0"
   spec.add_runtime_dependency "dotenv", "~> 2.8", ">= 2.8.0"
   spec.add_runtime_dependency "jekyll", "~> 4.2", ">= 4.2.0"
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 12.3.3"
+  spec.add_development_dependency "rspec", "~> 3.11.0"
+  spec.add_development_dependency "rubocop", "~> 1.36.0"
   spec.metadata["rubygems_mfa_required"] = "true"
 end

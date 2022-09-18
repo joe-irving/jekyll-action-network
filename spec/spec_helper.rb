@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "jekyll/action-network"
+require "jekyll/action_network_spec"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

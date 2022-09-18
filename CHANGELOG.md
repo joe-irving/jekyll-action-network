@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.3.1](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.3.0...v0.3.1) (2022-09-18)
+
+
+### Bug Fixes
+
+* settings spelling and gemspec files bug ([36c6a95](https://www.github.com/joe-irving/jekyll-action-network/commit/36c6a953c404ff8f5757ea83fd9aa1adb921c674))
+
 ## [0.3.0](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.2.0...v0.3.0) (2022-09-17)
 
 

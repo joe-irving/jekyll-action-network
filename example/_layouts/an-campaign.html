@@ -2,4 +2,11 @@
 layout: page
 ---
 {{ content }}
-{{ page.embed_code }}
+
+<ul>
+{% for action_blob in page.actions %}
+{% assign action = site.actions | where: 'browser_url', action_blob.browser_url | first %}
+<li><a href="{{ action.url | relative_url }}">{{ action.title }}</a></li>
+
+{% endfor %}
+</ul>

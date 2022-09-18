@@ -36,54 +36,93 @@ action_network:
     # And your collections from action network you want to import
     events: true
     petitions: true
+    forms: true
+    campaigns: true
 ```
 
 Here is the full default configuration:
 
 ```yaml
 action_network:
-    petitions:
-        collection: petitions
-        layout: an-petition 
-        content: description
-        mappings:
-            title: title
-            description: description
-            petition_text: petition_text
-            browser_url: browser_url
-            featured_image_url: image
-            target: target
-            "action_network:sponsor": sponsor
-    events:
-        collection: events
-        layout: an-event
-        content: description
-        mappings:
-            title: title
-            description: description
-            browser_url: browser_url
-            featured_image_url: image
-            start_date: start_date
-            end_date: end_date
-            location: location
-            "action_network:event_campaign_id": event_campaign_id
-            status: status
-            visibility: visibility
-            capacity: capacity
-            "action_network:sponsor": sponsor
-    event_campaigns:
-        collection: event_campaigns
-        layout: an-event_campaign
-        content: description
-        mappings:
-            title: title
-            description: description
-            browser_url: browser_url
-            featured_image_url: image
-            host_url: host_url
-            total_events: total_events
-            total_rsvps: total_rsvps
-            "action_network:sponsor": sponsor
+  key: ENV_YOUR_API_KEY
+  actions: true # whether to combine all action network actions into one collection
+  petitions:
+    collection: petitions
+    layout: an-petition 
+    content: description
+    mappings:
+      title: title
+      description: description
+      petition_text: petition_text
+      browser_url: browser_url
+      featured_image_url: image
+      target: target
+      "action_network:sponsor": sponsor
+  campaigns:
+    collection: campaigns
+    layout: an-campaign
+    content: description
+    mappings:
+      title: title
+      description: description
+      browser_url: browser_url
+      featured_image_url: image
+      actions: actions
+      "action_network:sponsor": sponsor
+  events:
+    collection: events
+    layout: an-event
+    content: description
+    mappings:
+      title: title
+      description: description
+      browser_url: browser_url
+      featured_image_url: image
+      start_date: start_date
+      end_date: end_date
+      location: location
+      "action_network:event_campaign_id": event_campaign_id
+      status: status
+      visibility: visibility
+      capacity: capacity
+      "action_network:sponsor": sponsor
+  event_campaigns:
+    collection: event_campaigns
+    layout: an-event_campaign
+    content: description
+    mappings:
+      title: title
+      description: description
+      browser_url: browser_url
+      featured_image_url: image
+      host_url: host_url
+      total_events: total_events
+      total_rsvps: total_rsvps
+      "action_network:sponsor": sponsor
+  advocacy_campaigns:
+    collection: advovacy_campaigns
+    layout: an-advovacy_campaigns
+    content: description
+    mappings:
+      title: title
+      description: description
+      type: type
+      browser_url: browser_url
+      featured_image_url: image
+      "action_network:sponsor": sponsor
+      targets: targets
+      total_outreaches: total_outreaches
+  forms:
+    collection: forms
+    layout: an-form
+    content: description
+    mappings:
+      title: title
+      description: description
+      call_to_action: call_to_action
+      browser_url: browser_url
+      featured_image_url: image
+      "action_network:sponsor": sponsor
 ```
 
 ### Templating your collections

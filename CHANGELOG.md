@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.3.2](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.3.1...v0.3.2) (2022-09-18)
+
+
+### Bug Fixes
+
+* missing action_network_rest dependancy ([63c0f4e](https://www.github.com/joe-irving/jekyll-action-network/commit/63c0f4ec4a62c87be63e41d1a2f51bf9728ca821))
+
 ### [0.3.1](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.3.0...v0.3.1) (2022-09-18)
 
 

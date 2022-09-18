@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Build the gem
+gem build *.gemspec
+
+# Push it to rubygems.org
+gem push *.gem
+
+# Move the gem to pkg folder
+mv *.gem pkg/

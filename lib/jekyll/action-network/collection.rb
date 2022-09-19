@@ -69,7 +69,7 @@ module Jekyll
 
           next if value == "%" && action[key]
 
-          Jekyll.logger.debug @log_name, "#{name} filtered because #{action[key]} == #{value}"
+          Jekyll.logger.debug @log_name, "#{action["title"]} filtered because #{action[key]} == #{value}"
           filtered = true
           break
         end

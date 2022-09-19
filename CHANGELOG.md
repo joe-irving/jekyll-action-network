@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.4.1](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.4.0...v0.4.1) (2022-09-19)
+
+
+### Bug Fixes
+
+* reduce api calls and fix config as list issue ([7a1bd00](https://www.github.com/joe-irving/jekyll-action-network/commit/7a1bd0098eca05dc3808febf2962eaa1f8b4b3b0))
+
 ## [0.4.0](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.3.3...v0.4.0) (2022-09-19)
 
 

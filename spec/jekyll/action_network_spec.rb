@@ -17,7 +17,6 @@ RSpec.describe Jekyll::ActionNetwork do
 
   # maps feilds correctly
 
-
   # it "does something useful" do
   #   expect(false).to eq(true)
   # end

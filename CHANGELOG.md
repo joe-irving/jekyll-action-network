@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.4.2](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.4.1...v0.4.2) (2022-09-19)
+
+
+### Bug Fixes
+
+* reference to name replaced with action title ([fce0e14](https://www.github.com/joe-irving/jekyll-action-network/commit/fce0e14961b28fa96ece0e69b41410982c1c564a))
+
 ### [0.4.1](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.4.0...v0.4.1) (2022-09-19)
 
 

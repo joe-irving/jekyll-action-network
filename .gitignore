@@ -18,5 +18,3 @@ _site
 vendor
 
 .env
-
-Gemfile.lock

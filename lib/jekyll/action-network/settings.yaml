@@ -55,6 +55,7 @@ defaults:
     collection: events
     layout: an-event
     content: description
+    include_event_campaigns: true
     mappings:
       title: title
       description: description

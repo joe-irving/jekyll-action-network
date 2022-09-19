@@ -45,7 +45,21 @@ module Jekyll
       end
 
       def actions
-        @actions ||= @generator.get_full_list(@name)
+        return @actions if @actions
+
+        @actions = @generator.get_full_list(@name)
+        @actions.concat(all_ec_events) if @name == "events" && config["include_event_campaigns"]
+        @actions.uniq(&:action_network_id)
+      end
+
+      def all_ec_events
+        event_campaigns = @generator.get_full_list("event_campaigns")
+        events = []
+        event_campaigns.each do |event_campaign|
+          ec_client = @client.event_campaigns(event_campaign.action_network_id)
+          events.concat(@generator.get_full_list("events", ec_client))
+        end
+        events
       end
 
       def filters

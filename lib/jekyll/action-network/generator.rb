@@ -106,11 +106,12 @@ module Jekyll
         @page_size ||= @entry_point["max_page_size"]
       end
 
-      def get_full_list(name)
+      def get_full_list(name, client = nil)
+        client ||= @client
         page = 1
         actions = []
         loop do
-          action_page = @client.send(name).list(page: page)
+          action_page = client.send(name).list(page: page)
           actions.concat(action_page)
           break if action_page.size < page_size
 

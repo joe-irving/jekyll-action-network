@@ -85,6 +85,10 @@ action_network:
       collection: events
       layout: an-event
       content: description
+      # Specific to events, checking if you should import all
+      # events, as by default action network does not include events in event
+      # campaigns.
+      include_event_campaigns: true
       mappings:
         title: title
         description: description

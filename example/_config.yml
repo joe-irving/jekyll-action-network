@@ -51,10 +51,11 @@ collections:
 
 # Action Network Import
 action_network:
-  key: ENV_ACTION_NETWORK_API
-  actions: true
+  # key: ENV_ACTION_NETWORK_API_KEY
+  # actions: true
   import:
-    - name: events
+    - events
+    - petitions
     # - name: petitions
     # - name: event_campaigns
     # - name: forms

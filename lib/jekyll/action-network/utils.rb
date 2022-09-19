@@ -26,19 +26,6 @@ module Jekyll
         "#{css}<script src='https://actionnetwork.org/widgets/v5/#{resource}/#{slug}?format=js&source=widget'></script>
         <div id='can-#{resource}-area-#{slug}' style='width: 100%'></div>"
       end
-
-      def get_full_list(client, name)
-        page = 1
-        actions = []
-        loop do
-          action_page = client.send(name).list(page: page)
-          break if action_page.empty?
-
-          actions.concat(action_page)
-          page += 1
-        end
-        actions
-      end
     end
   end
 end

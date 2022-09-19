@@ -8,8 +8,9 @@ module Jekyll
     class Collection
       UTILS = Jekyll::ActionNetwork::Utils.new
 
-      def initialize(site, client, config_init, settings)
+      def initialize(site, generator, client, config_init, settings)
         @site = site
+        @generator = generator
         @settings = settings
         @client = client
         @config_init = config_init
@@ -44,7 +45,7 @@ module Jekyll
       end
 
       def actions
-        @actions ||= UTILS.get_full_list(@client, @name)
+        @actions ||= @generator.get_full_list(@name)
       end
 
       def filters

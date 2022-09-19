@@ -35,6 +35,9 @@ embed:
   styles:
     standard: <link href='https://actionnetwork.org/css/style-embed-v3.css' rel='stylesheet' type='text/css' />
     layout_only: <link href='https://actionnetwork.org/css/style-embed-whitelabel-v3.css' rel='stylesheet' type='text/css' />
+actions:
+  collection: actions
+key: ENV_ACTION_NETWORK_API_KEY
 defaults:
   petitions:
     collection: petitions
@@ -48,17 +51,6 @@ defaults:
       featured_image_url: image
       target: target
       "action_network:sponsor": sponsor
-  # campaigns:
-  #   collection: campaigns
-  #   layout: an-campaign
-  #   content: description
-  #   mappings:
-  #     title: title
-  #     description: description
-  #     browser_url: browser_url
-  #     featured_image_url: image
-  #     actions: actions
-  #     "action_network:sponsor": sponsor
   events:
     collection: events
     layout: an-event
@@ -112,4 +104,15 @@ defaults:
   #     call_to_action: call_to_action
   #     browser_url: browser_url
   #     featured_image_url: image
+  #     "action_network:sponsor": sponsor
+  # campaigns:
+  #   collection: campaigns
+  #   layout: an-campaign
+  #   content: description
+  #   mappings:
+  #     title: title
+  #     description: description
+  #     browser_url: browser_url
+  #     featured_image_url: image
+  #     actions: actions
   #     "action_network:sponsor": sponsor

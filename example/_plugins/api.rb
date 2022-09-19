@@ -21,8 +21,9 @@ module JsonPages
         def generate(site)
             collections_json = {}
             site.collections.each do |name, collection|
+                Jekyll.logger.warn "No name for collection: #{collection.label}" if !name
                 json_collection = json_collection(site, name)
-                json_collection_page = Jekyll::PageWithoutAFile.new(site, "", "api/#{name}", "index.json")
+                json_collection_page = Jekyll::PageWithoutAFile.new(site, "", "api/#{collection.label}", "index.json")
                 json_collection_page.content = JSON.generate(json_collection)
                 site.pages << json_collection_page
                 collections_json[name] = collection.metadata

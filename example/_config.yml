@@ -44,24 +44,26 @@ collections:
     output: true
   event_campaigns:
     output: true
-  campaigns:
-    output: true
-  forms:
-    output: true
+  # campaigns:
+  #   output: true
+  # forms:
+  #   output: true
 
 # Action Network Import
 action_network:
   key: ENV_ACTION_NETWORK_API
   actions: true
-  events: true
-  petitions: true
-  event_campaigns: true
-  campaigns: true
-  advocacy_campaigns:
-    collection: letters
-    filters:
-      type: email
-  forms: true
+  import:
+    - name: events
+    # - name: petitions
+    # - name: event_campaigns
+    # - name: forms
+
+    # - name: advocacy_campaigns
+    #   collection: letters
+    #   filters:
+    #     type: email
+
   # advocacy_campaigns:
   #   collection: call_campaigns
   #   filters:

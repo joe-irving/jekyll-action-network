@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.4.0](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.3.3...v0.4.0) (2022-09-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* fix linting errors
+
+### Bug Fixes
+
+* fix linting errors ([aa1d972](https://www.github.com/joe-irving/jekyll-action-network/commit/aa1d972739a669d05762dc46043650e9454a6d81))
+
 ### [0.3.3](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.3.2...v0.3.3) (2022-09-18)
 
 

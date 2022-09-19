@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.4.2...v0.5.0) (2022-09-19)
+
+
+### Features
+
+* load all events including in event campaigns ([178b662](https://www.github.com/joe-irving/jekyll-action-network/commit/178b662d8a6c7b43ad842594fc62dd3e00b97f5e))
+
 ### [0.4.2](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.4.1...v0.4.2) (2022-09-19)
 
 

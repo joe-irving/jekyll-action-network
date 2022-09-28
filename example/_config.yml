@@ -44,95 +44,23 @@ collections:
     output: true
   event_campaigns:
     output: true
-  # campaigns:
-  #   output: true
-  # forms:
-  #   output: true
+  campaigns:
+    output: true
+  forms:
+    output: true
+  advocacy_campaigns:
+    output: true
+    permalink: /:categories/:slug/
 
 # Action Network Import
 action_network:
-  # key: ENV_ACTION_NETWORK_API_KEY
-  # actions: true
+  actions: true
   import:
     - events
     - petitions
-    # - name: petitions
-    # - name: event_campaigns
-    # - name: forms
-
-    # - name: advocacy_campaigns
-    #   collection: letters
-    #   filters:
-    #     type: email
-
-  # advocacy_campaigns:
-  #   collection: call_campaigns
-  #   filters:
-  #     type: call
-  # petitions:
-  #   collection: petitions
-  #   layout: an-petition 
-  #   content: description
-  #   mappings:
-  #     title: title
-  #     description: description
-  #     petition_text: petition_text
-  #     browser_url: browser_url
-  #     featured_image_url: image
-  #     target: target
-  #     "action_network:sponsor": sponsor
-  # campaigns:
-  #   collection: campaigns
-  #   layout: an-campaigns
-  #   content: description
-  #   mappings:
-  #     title: title
-  #     description: description
-  #     browser_url: browser_url
-  #     featured_image_url: image
-  #     actions: actions
-  #     "action_network:sponsor": sponsor
-  # events:
-  #   collection: events
-  #   layout: an-event
-  #   content: description
-  #   mappings:
-  #     title: title
-  #     description: description
-  #     browser_url: browser_url
-  #     featured_image_url: image
-  #     start_date: start_date
-  #     end_date: end_date
-  #     location: location
-  #     "action_network:event_campaign_id": event_campaign_id
-  #     status: status
-  #     visibility: visibility
-  #     capacity: capacity
-  #     "action_network:sponsor": sponsor
-  # event_campaigns:
-  #   collection: event_campaigns
-  #   layout: an-event_campaigns
-  #   content: description
-  #   mappings:
-  #     title: title
-  #     description: description
-  #     browser_url: browser_url
-  #     featured_image_url: image
-  #     host_url: host_url
-  #     total_events: total_events
-  #     total_rsvps: total_rsvps
-  #     "action_network:sponsor": sponsor
-  # forms:
-  #   collection: forms
-  #   layout: an-forms
-  #   content: description
-  #   mappings:
-  #     title: title
-  #     description: description
-  #     call_to_action: call_to_action
-  #     browser_url: browser_url
-  #     featured_image_url: image
-  #     "action_network:sponsor": sponsor
+    - forms
+    - campaigns
+    - advocacy_campaigns
 
 # Exclude from processing.
 # The following items will not be processed, by default.

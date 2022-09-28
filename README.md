@@ -115,6 +115,41 @@ action_network:
         total_events: total_events
         total_rsvps: total_rsvps
         "action_network:sponsor": sponsor
+    - name: advocacy_campaigns
+      collection: advocacy_campaigns
+      layout: an-advocacy_campaign
+      content: description
+      mappings:
+        title: title
+        description: description
+        type: categories
+        browser_url: browser_url
+        featured_image_url: image
+        "action_network:sponsor": sponsor
+        targets: targets
+        total_outreaches: total_outreaches
+    - name: forms
+      collection: forms
+      layout: an-form
+      content: description
+      mappings:
+        title: title
+        description: description
+        call_to_action: call_to_action
+        browser_url: browser_url
+        featured_image_url: image
+        "action_network:sponsor": sponsor
+    - name: campaigns
+      collection: campaigns
+      layout: an-campaign
+      content: description
+      mappings:
+        title: title
+        description: description
+        browser_url: browser_url
+        featured_image_url: image
+        actions: actions
+        "action_network:sponsor": sponsor
 ```
 
 ### Templating your collections

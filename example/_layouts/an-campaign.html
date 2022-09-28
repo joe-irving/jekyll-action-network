@@ -5,6 +5,7 @@ layout: page
 
 <ul>
 {% for action_blob in page.actions %}
+{{ action_blob.url  }}
 {% assign action = site.actions | where: 'browser_url', action_blob.browser_url | first %}
 <li><a href="{{ action.url | relative_url }}">{{ action.title }}</a></li>
 

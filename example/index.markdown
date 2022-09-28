@@ -24,3 +24,13 @@ layout: home
 # Forms
 
 {% include post_list.html data=site.forms %}
+
+# Email campaigns
+
+{% assign posts = site.advocacy_campaigns | where: "categories", "email" %}
+{% include post_list.html data=posts %}
+
+# Call campaigns
+
+{% assign posts = site.advocacy_campaigns | where: "categories", "call" %}
+{% include post_list.html data=posts %}

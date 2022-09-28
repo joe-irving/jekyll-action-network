@@ -18,6 +18,8 @@ module Jekyll
       end
 
       def make_embed_code(browser_url, style = nil)
+        return unless browser_url
+
         relative_url = browser_url.split("://")[1].sub("actionnetwork.org/", "")
         split_url = relative_url.split("/")
         css = settings["embed"]["styles"][style] if style

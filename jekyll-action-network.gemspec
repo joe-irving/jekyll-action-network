@@ -27,8 +27,8 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.5"
 
-  spec.add_runtime_dependency "action_network_rest", "~> 0.10.0"
-  spec.add_runtime_dependency "dotenv", "~> 2.8", ">= 2.8.0"
+  spec.add_runtime_dependency "action_network_rest", "~> 0.11.0"
+  spec.add_runtime_dependency "dotenv", "~> 2.8", ">= 2.8.0"  
   spec.add_runtime_dependency "jekyll", "~> 4.2", ">= 4.2.0"
 
   spec.add_development_dependency "bundler", "~> 2.0"

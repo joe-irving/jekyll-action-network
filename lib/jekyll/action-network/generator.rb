@@ -25,6 +25,7 @@ module Jekyll
         return unless authenticate
 
         make_collections
+        # site.config['action_network']['generated'] = true
       end
 
       def make_collections

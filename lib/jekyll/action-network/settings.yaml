@@ -49,7 +49,7 @@ defaults:
       petition_text: petition_text
       browser_url: browser_url
       featured_image_url: image
-      target: target
+      target: petition_target
       "action_network:sponsor": sponsor
   events:
     collection: events

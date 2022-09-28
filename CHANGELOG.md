@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.0](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.5.0...v0.6.0) (2022-09-28)
+
+
+### Features
+
+* add features in new api wrapper update ([e29ce67](https://www.github.com/joe-irving/jekyll-action-network/commit/e29ce67e63d612a30c493317c752441472c2d30b))
+
+
+### Bug Fixes
+
+* remve todoa ([8437c5b](https://www.github.com/joe-irving/jekyll-action-network/commit/8437c5bb4b71789d3321205096f97595899707fe))
+
 ## [0.5.0](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.4.2...v0.5.0) (2022-09-19)
 
 

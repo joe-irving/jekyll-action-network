@@ -24,6 +24,7 @@ fields:
   - call_to_action
   - "action_network:event_campaign_id"
   - type
+  - created_date
 embed:
   resources:
     forms: form
@@ -51,6 +52,7 @@ defaults:
       featured_image_url: image
       target: petition_target
       "action_network:sponsor": sponsor
+      created_date: date
   events:
     collection: events
     layout: an-event
@@ -69,6 +71,7 @@ defaults:
       visibility: visibility
       capacity: capacity
       "action_network:sponsor": sponsor
+      created_date: date
   event_campaigns:
     collection: event_campaigns
     layout: an-event_campaign
@@ -82,6 +85,7 @@ defaults:
       total_events: total_events
       total_rsvps: total_rsvps
       "action_network:sponsor": sponsor
+      created_date: date
   advocacy_campaigns:
     collection: advocacy_campaigns
     layout: an-advocacy_campaign
@@ -95,6 +99,7 @@ defaults:
       "action_network:sponsor": sponsor
       targets: targets
       total_outreaches: total_outreaches
+      created_date: date
   forms:
     collection: forms
     layout: an-form
@@ -106,6 +111,7 @@ defaults:
       browser_url: browser_url
       featured_image_url: image
       "action_network:sponsor": sponsor
+      created_date: date
   campaigns:
     collection: campaigns
     layout: an-campaign
@@ -117,3 +123,4 @@ defaults:
       featured_image_url: image
       actions: actions
       "action_network:sponsor": sponsor
+      created_date: date

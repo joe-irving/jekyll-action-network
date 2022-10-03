@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.6.1](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.6.0...v0.6.1) (2022-10-03)
+
+
+### Bug Fixes
+
+* add created_date as option for import ([a9f21f5](https://www.github.com/joe-irving/jekyll-action-network/commit/a9f21f54696a36c0a80244ce9249e2996aa1dd7d))
+
 ## [0.6.0](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.5.0...v0.6.0) (2022-09-28)
 
 

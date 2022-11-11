@@ -38,6 +38,11 @@ embed:
     layout_only: <link href='https://actionnetwork.org/css/style-embed-whitelabel-v3.css' rel='stylesheet' type='text/css' />
 actions:
   collection: actions
+endpoint_mappings:
+  forms: submissions
+  events: attendances
+  petitions: signatures
+  advocacy_campaigns: outreaches
 key: ENV_ACTION_NETWORK_API_KEY
 defaults:
   petitions:

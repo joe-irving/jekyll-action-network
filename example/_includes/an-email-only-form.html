@@ -1,0 +1,45 @@
+<noscript>
+  <p>It looks like you have Javascript disabled. You won't be able to submit the form below without it.</p>
+</noscript>
+<form id="action-network-blind-post" class="Chaos-Form" action="{{ include.endpoint }}" method="post">
+    <fieldset class="pair">
+      <div class="input text">
+        <input for="action-network-form-first-label" type="text" name="given_name" value="" id="action-network-form-first" required>
+        <label id="action-network-form-first-label">First Name</label>
+      </div>
+      <div class="input text">
+        <input type="email" name="email_address" id="action-network-form-email" for="action-network-form-email-label" required/>
+        <label id="action-network-form-email-label">Email Address</label>
+      </div>
+      <button type="submit" id="simple_submit" value="Submit" class="Chaos-Button input">Join&nbsp;Us</button>
+      <!-- <div class="input">
+
+        <label for="simple_submit"></label>
+      </div> -->
+    </fieldset>
+  <div id="action-network-blind-post-success"></div>
+</form>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#action-network-blind-post').osdi({
+      done: function(data, textStatus, jqXHR) {
+        console.log('done');
+        $(':input','#action-network-blind-post')
+          .not(':button, :submit, :reset, :hidden')
+          .val('')
+          .prop('checked', false)
+          .prop('selected', false);
+        $('#action-network-blind-post-success').html('<p><strong>Thanks!</strong></p>');
+        {% if include.jump.size > 0 %}
+        setTimeout(function(){
+            location.href = "#{{ include.jump }}";
+        },500);
+        {% endif %}
+      },
+      fail: function(jqXHR, textStatus, errorThrown) {
+        console.log('fail');
+        $('#action-network-blind-post-success').html('<p>Looks like that didn\'t work!</p>');
+      },
+    });
+  });
+</script>

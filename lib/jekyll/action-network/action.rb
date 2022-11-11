@@ -6,12 +6,13 @@ module Jekyll
     # An action network action, call the +doc+ method to get a
     # Jekyll::Document for this action
     class Action
-      def initialize(site, name, collection, config, action)
+      def initialize(site, name, collection, config, action, settings)
         @site = site
         @collection = collection
         @config = config
         @action = action
         @name = name
+        @settings = settings
         @utils = Jekyll::ActionNetwork::Utils.new
       end
 
@@ -43,7 +44,18 @@ module Jekyll
         @front_matter["slug"] = slug
         @front_matter["embed_code"] = @utils.make_embed_code(@action["browser_url"])
         @front_matter["action_type"] = @name
+        @front_matter["action_network_endpoint"] = endpoint
+        @front_matter["action_network_blindpost"] = blindpost
         @front_matter
+      end
+
+      def endpoint
+        @action['_links']['self']['href']
+      end
+
+      def blindpost
+        linked_type = @settings['endpoint_mappings'][@name]
+        return @action['_links']["osdi:#{linked_type}"]['href'] if linked_type
       end
 
       def content

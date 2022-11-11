@@ -33,7 +33,7 @@ module Jekyll
       def documents
         documents = []
         filtered_actions.each do |action_data|
-          action = Jekyll::ActionNetwork::Action.new(@site, @name, collection, config, action_data)
+          action = Jekyll::ActionNetwork::Action.new(@site, @name, collection, config, action_data, @settings)
           documents << action.doc
         end
         documents

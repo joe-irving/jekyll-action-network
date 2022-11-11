@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.6.2](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.6.1...v0.6.2) (2022-11-11)
+
+
+### Bug Fixes
+
+* add settings ([cdeefb2](https://www.github.com/joe-irving/jekyll-action-network/commit/cdeefb26f578f1271eb48533babbf0cc057712cb))
+
 ### [0.6.1](https://www.github.com/joe-irving/jekyll-action-network/compare/v0.6.0...v0.6.1) (2022-10-03)
 
 
